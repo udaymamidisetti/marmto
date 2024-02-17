@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d98e147d82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script>
+      let result = [];
+      window.onload = function () {
+        fetch("https://dogs-care.onrender.com/api/dogs_care")
+          .then((response) => response.json())
+          .then((data) => {
+            [...result, ...data];
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      };
+    </script>
+    <header class="header">
+      <div class="logo-container">
+        <img src="./assets/Group 1.png" alt="log" />
+        <img src="./assets/Shopup.png" alt="logo" />
+      </div>
+      <div class="nav-container">
+        <p>Our Services</p>
+        <p>About Us</p>
+        <p>Products</p>
+        <p>Petcare</p>
+        <p>Contact</p>
+      </div>
+      <div class="button-container">
+        <button class="sign-button">Sign In</button>
+        <button class="register-button">Register</button>
+      </div>
+    </header>
+    <section class="section">
+      <!-- <div class="left">
+        <h1 class="heading">
+          Taking care<br />
+          of your pet dog
+        </h1>
+        <p class="desc">
+          Human–canine bonding is the relationship<br />
+          between dogs and humans.
+        </p>
+       
+      </div>
+      <div></div> -->
+      <button class="section-botton">Shop Now</button>
+    </section>
+  </body>
+</html>

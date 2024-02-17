@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:wght@100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+h1 p {
+  margin: 0;
+}
+.header {
+  width: 100%;
+  height: 59px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  gap: 35.57px;
+}
+.nav-container > p {
+  font-size: 24.06px;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 17.2px;
+}
+
+.sign-button {
+  width: 180.85px;
+  height: 59px;
+  background-color: rgb(18, 76, 95);
+  color: #fff;
+  border: 0;
+}
+.register-button {
+  width: 180.85px;
+  height: 59px;
+  background-color: rgb(199, 231, 225);
+  color: rgb(18, 76, 95);
+  border: 0;
+}
+
+.section {
+  height: 577px;
+  background-image: url("../assets/hero.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-position: -181px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+.left {
+  width: 662px;
+  margin-left: 200px;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 52.93px;
+  letter-spacing: 5%;
+  margin: 0;
+}
+.desc {
+  font-weight: 400;
+  font-size: 22.86px;
+  letter-spacing: 5%;
+  margin: 0;
+  padding-top: 20px;
+}
+.section-botton {
+  width: 231.8px;
+  height: 72.9px;
+  background-color: rgb(18, 76, 95);
+  color: rgb(255, 255, 255);
+  font-size: 24.06px;
+  border: 0;
+  margin-left: 20%;
+  margin-top: 61px;
+}
